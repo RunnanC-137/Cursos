@@ -1,6 +1,16 @@
+body{
+    background-color: rgba(247, 244, 244, 0.767);
+
+}
+
 #corpo{
-    background-color: rgba(169, 169, 169, 0.13);
+    background-color: rgba(228, 219, 211, 0.836);
     width: 800px;
     margin: auto;
     padding: 15px;
+    border: 3px;
+    border-radius: 25px;
+    border-style: solid;
+    border-color: #f3c4c4dc;
+    box-sizing: border-box;
 }
