@@ -12,9 +12,10 @@ div{
     width: 400px;
     height: 200px;
     margin: auto;
-    margin-top: 100px;
-    padding: 20px;
+    margin-top: 10%;
+    padding: 1px 10px;
     text-transform: uppercase;
+    box-sizing: border-box;
 }
 #um{
     list-style-image: url(imagens/Insta.png);
@@ -29,5 +30,7 @@ a{
     text-decoration: none;
     font-size: 20px;
     color: black;
-    padding-left: 10px;
+}
+ol{
+    padding-bottom: 7px;
 }
