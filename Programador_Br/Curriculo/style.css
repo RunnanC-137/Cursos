@@ -40,7 +40,9 @@ li{
     list-style-position: inside
     ;
 }
-
+#imagem{
+    text-align: center;
+}
 #corpo{
     background-color: rgb(245, 241, 238);
     width: 50vw;
