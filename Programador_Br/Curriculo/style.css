@@ -43,8 +43,8 @@ li{
 
 #corpo{
     background-color: rgb(245, 241, 238);
-    width: 800px;
-    height: 900px;
+    width: 50vw;
+    height: 95vh;
     margin: auto;
     padding: 15px;
     border: 3px;
@@ -52,4 +52,5 @@ li{
     border-style: solid;
     border-color: #dfc0c0;
     box-sizing: border-box;
+    overflow: auto;
 }
