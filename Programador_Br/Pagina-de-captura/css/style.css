@@ -1,0 +1,36 @@
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+boty{
+    background-color: black;
+}
+header{
+    background-color: rgb(67, 179, 243);
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    line-height: 0%;
+    text-align: center;
+    
+}
+#fotao{
+    background-image: url(../images/people.jpg);
+    background-size: cover;
+    width: 100vw;
+    height: 50vh;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+
+
+}
+#divinha{
+    width: 15%;
+    height: 80%;
+    background-color: rgba(243, 243, 250, 0.692);
+    padding: 10px;
+    position: absolute;
+    right: 10%;
+    top: 18%;
+    overflow:scroll;
+}
