@@ -71,6 +71,7 @@ footer{
     background-color: #1b1e20;
     padding: 40px;
     text-align: center;
+    box-sizing: border-box;
 }
 .image{
     width: 160px;
@@ -78,13 +79,16 @@ footer{
 
 .description{
     display: inline-block;
+    text-align: justify;
     color: white;
     max-width: 40%;
-
+    margin-left: 40px;
 }
-.description p, .description h3{
+.description p{
     margin-bottom: 20px;
+
 }
 .description h3{
     font-size: 24px;
+    margin-bottom: 20px;
 }
