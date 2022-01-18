@@ -73,9 +73,12 @@ footer{
     padding: 40px;
     text-align: center;
     box-sizing: border-box;
+    overflow: hidden;
+
 }
 .image{
     width: 160px;
+
 }
 
 .description{
@@ -84,6 +87,8 @@ footer{
     color: white;
     max-width: 40%;
     margin-left: 40px;
+    margin-right: 40px;
+    padding-top: 20px;
 }
 .description p{
     margin-bottom: 20px;
@@ -92,4 +97,11 @@ footer{
 .description h3{
     font-size: 24px;
     margin-bottom: 20px;
+}
+
+@media screen and (max-width: 700px){
+    .description{
+        text-align: justify;
+        max-width: 100%;
+    }
 }
