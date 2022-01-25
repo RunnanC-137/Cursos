@@ -1,18 +1,24 @@
-function NumBr(num) {
+function NumBr(num, repeat=false) {
+	let chave = repeat
 	let numero = num
-    numero = numero.replace(',' , '.')
-	if (parseInt(numero) != NaN && parseFloat(numero) == NaN) {
-		numero = parseInt(numero);
-        return numero;
-	}
-	else if (parseFloat(numero) != NaN) {
-		numero = parseFloat(numero);
-        return numero;
+    numero = String(numero).replace(',' , '.')
+	if (isNaN(numero)) {
+		if (chave) {
+			while (isNaN(numero)){
+			numero = prompt('digite um numero válido')
+			numero = String(numero).replace(',' , '.')
+			}
+			return numero
+		}
+		else {
+			return NaN
+		}
 	}
     else {
-        return NaN;   
+        numero = parseFloat(numero);
+        return numero;   
     }
 }
 
-
-
+var number = NumBr(prompt('Digite um numero'), repeat=true)
+alert(number)
