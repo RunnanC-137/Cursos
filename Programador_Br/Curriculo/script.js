@@ -20,5 +20,5 @@ function NumBr(num, repeat=false) {
     }
 }
 
-var number = NumBr(prompt('Digite um numero'), repeat=true)
-alert(number)
+var nome = document.getElementById('title_name')
+nome.innerHTML = "Nome"
