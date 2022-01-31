@@ -21,4 +21,3 @@ function NumBr(num, repeat=false) {
 }
 
 var nome = document.getElementById('title_name')
-nome.innerHTML = "Nome"

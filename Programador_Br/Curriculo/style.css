@@ -1,58 +1,169 @@
+* {
+    
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 55; 
+    margin: 0;
+    padding: 0;
+}
+
 html{
-    background-color: #775b5baf;
-    font-family:Arial, Helvetica, sans-serif
+
+    background-color: rgb(52, 190, 190);
 }
 
-th{
-    border: 2px solid;
-    box-sizing: border-box;
-    background-color: #f3c4c4dc;
-    border-radius: 6px;
-}
+main {
 
-td{
-    border: 1.5px solid;
-    box-sizing: border-box;
-    font-weight: 600;
-    background-color: #f7f4f4c4;
-    border-radius: 5px;
-    padding-left: 5px;
-}
-
-
-ol{
-    background-color: #f7f4f4f6;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 10px;
-    width: 240px;
-    box-sizing: border-box;
-}
-
-li{
-    border: 1px black solid ;
-    padding-left: 10px;
-    margin: 10px;
-    width: 200px;
-    box-sizing: border-box;
-    background-color: rgba(228, 219, 211, 0.836);
-    border-radius: 10px;
-    list-style-position: inside
-    ;
-}
-#imagem{
-    text-align: center;
-}
-#corpo{
-    background-color: rgb(245, 241, 238);
-    width: 50vw;
-    height: 95vh;
     margin: auto;
-    padding: 15px;
-    border: 3px;
-    border-radius: 25px;
-    border-style: solid;
-    border-color: #dfc0c0;
-    box-sizing: border-box;
-    overflow: auto;
+    margin-top: 1%;
+    background-color: white;
+    max-width: 800px;
+    width: 80%;
+    border-radius: 1%;
 }
+
+label {
+    
+    font-size: 16px;
+    display: block;
+    margin-bottom: 2%;
+}
+
+input {
+
+    border: 0;
+    outline: 0;
+    color: rgb(20, 20, 20);
+    border-bottom: 2px solid rgb(200, 200, 200);
+    font-size: 100%;
+
+}
+
+input[type=text]:valid, 
+input[type=email]:valid,
+input[type="text"]:hover,
+input[type="email"]:hover {
+    
+    border-bottom: 2px solid cornflowerblue;
+}
+
+#cabeçalho {
+
+    background-color: rgba(96, 96, 226, 0);
+    margin-bottom: 5%;
+
+}
+
+#cabeçalho-p1 {
+
+    display: inline-block;
+
+}
+
+
+#cabeçalho-p1 label {
+
+    margin:10% 0% 10% 2%;
+    transition: 0.5s ease-in-out;
+}
+
+div#cabeçalho-p1 label[for=nome] {
+
+    font-size: 130%;
+}
+
+div#cabeçalho-p1 label[for=profissao] input {
+
+    width: 80%;
+    font-size: 110%;
+    
+
+}
+
+#cabeçalho-p2 {
+
+    display: inline-block;
+    float: right;
+    background-color: #7fffd400;
+    
+}
+
+#cabeçalho-p2 label {
+
+    margin: 2% 5% 2% 20%;
+}
+
+
+#resumo-p1 {
+
+    max-width: 40%;
+
+}
+
+#exp {
+
+    margin: 1% 0 0 1%;
+    padding: 1% 0 0 0;
+    background-color: rgba(52, 52, 219, 0);
+}
+
+#exp-p1 {
+
+    float: left;
+    position: relative;
+    display: inline-block;
+    top: 10pt;
+    margin: 1% 0 1% 1%;
+    background-color: rgba(68, 224, 89, 0)
+}
+
+#exp-p2 {
+
+    position: relative;
+    display: inline-block;
+    margin: 1% 0 1% 1%;
+    background-color: rgba(165, 81, 42, 0);
+    
+}
+
+.botoes {
+
+    display: inline-block;
+    background-color: rgba(127, 255, 212, 0);
+
+}
+
+.botoes label {
+
+    margin-bottom: 20%;
+}
+
+#formacao {
+    
+    margin: 1% 0 0 1%;
+    padding: 1% 0 0 0;
+}
+
+#formacao-p1 {
+
+    display: inline-block;
+    float: left;
+    margin: 1% 0 1% 1%;
+}
+
+#formacao-p2 {
+
+    position: relative;
+    display: inline-block;
+    margin: 1% 0 1% 1%;
+}
+
+
+.campo {
+
+    padding: 0 0 0 1%;
+
+}
+
+
+
+
