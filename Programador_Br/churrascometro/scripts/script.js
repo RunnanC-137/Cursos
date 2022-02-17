@@ -34,24 +34,17 @@ function duracao (horas, comida="") {
 
 }
 
+///
 
+inputs.forEach( (valor, indice, arry) => {
+
+    valor.addEventListener( "input", element => {
+        valor.style = ``
+    })
+
+})
 ///
 calcular.addEventListener( "click", element => {
-    
-    /* 
-        Carne - 400g/pessoa - horas > 6 650/pessoa
-        Refrigerante - 1000ml/pessoa - horas > 6 1500ml/pessoa
-        Cerveja - 1200ml/pessoa -  - horas > 6 2000ml/pessoa
-
-            .error {
-        border: 1px solid red;
-    }
-
-    .error::placeholder {
-        font-style: italic;
-        color: rgb(105, 21, 21);
-    */
-    
 
     for (let index in inputs) {
 
@@ -82,8 +75,4 @@ calcular.addEventListener( "click", element => {
             <p>${refrigerante}L de refrigerante</p>`
         }
     }
-    
-
-
-    
 })
