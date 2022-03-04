@@ -1,10 +1,10 @@
-### Bem vindo ao meu GitHub
+### Programador Br
 
-Ola eu me chamo Ruan e esse e o meu GitHub, sinta-se avontade para exploralo e opinar sobre, caso queira, veja tambem o [meu currículo](https://runnanc-137.github.io/Portfolio/)
+Esse repositório destina-se a apresentação dos projetos do curso de desenvolvimento web fullstack do programador br, sinta-se avontade para exploralo e opinar sobre, porém, devido aos projetos não serem "meus" eu não os ospedo no meu portifólio 😓
 
-## Objetivos 
+## Visão geral
 
-A minha grante menta esse ano e me qualificar e ganhar experiêcina na área
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla expedita quia accusantium aliquam magnam ex rem quisquam nobis eum ut a aut, et doloribus minima eveniet ducimus qui officiis odio.
 
 ## Minhas Redes Sociais
 
