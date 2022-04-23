@@ -27,33 +27,40 @@ window.onload = function () {
 
             verificador = false
 
-                    quadrados.forEach((o) => {
-                        if ( o.childElementCount == 0) {
-                            verificador = true
-                        }
-                    } 
-                    )
             if (e.childElementCount < 1) {
 
                 e.innerHTML = `<img src="https://i0.wp.com/multarte.com.br/wp-content/uploads/2019/03/logo-facebook-png8.png?w=640&ssl=1" alt="">`
 
                 
+                
+                quadrados.forEach((o) => {
 
-                while (escolhaCom.childElementCount == 1) {
-                    
-                    escolhaCom = quadrados[Math.floor(Math.random() *quadrados.length)]
-                    console.log(escolhaCom)
-                    if (verificador == false) {
-                        console.log("deu velha")   
-                        break
+                    if (o.childElementCount == 0) {
+                        verificador = true
                     }
-                }
+                })
+                console.log(verificador)
+                
+                if (escolhaCom.childElementCount > 0) {
 
-                if (verificador) {
-                    escolhaCom.innerHTML = `<img src="https://i0.wp.com/multarte.com.br/wp-content/uploads/2019/03/logo-facebook-transparente2.png?resize=696%2C526&ssl=1" alt="">`
+                    while (escolhaCom.childElementCount == 1) {
+                        
+                        escolhaCom = quadrados[Math.floor(Math.random() *quadrados.length)]
+                        
+                        if (verificador == false) {
+                            alert("deu velha")   
+                            break
+                        }
+                    }  
                 }
                 
-            } 
+                if (verificador) {
+                    escolhaCom.innerHTML = `<img src="https://i0.wp.com/multarte.com.br/wp-content/uploads/2019/03/logo-facebook-transparente2.png?resize=696%2C526&ssl=1" alt="">`
+                } 
+
+
+            }      
+            
           
         })
     }) 
