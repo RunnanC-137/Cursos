@@ -8,7 +8,12 @@ const doc = await db.collection(colle).doc(id).get()
 return doc.data()
 }
 
-async function whereAlunos(colle, key, simbol, value) {}
+async function whereAlunos(colle, key, simbol, value) {
+
+    const alunosCol = await db.collection(colle).where(key, simbol, value).get()
+    const alunosList = alunosCol.docs.map(doc => doc.data());
+    return alunosList
+}
 
 async function onSnap(colle, id=false) {
     if (id != false){
