@@ -26,7 +26,6 @@ async function onSnap(colle, id=false) {
         })}
 }
 
-
 const setAluno = (colle, id, aluno, subscribe=false) => { 
     db.collection(colle).doc(id).set(aluno, {marge: subscribe})
 }
@@ -37,3 +36,32 @@ const updateAluno = (colle, id, aluno) => db.collection(colle).doc(id).update(al
 const arrayAdd = firebase.firestore.FieldValue.arrayUnion
 const arrayDel = firebase.firestore.FieldValue.arrayRemove
 const sum = firebase.firestore.FieldValue.increment
+
+function newUser(newUserEmail, newUserPassword) {
+    auth.createUserWithEmailAndPassword(newUserEmail, newUserPassword)
+    .then(user => console.log(`user add com sucesso => ${user}`))
+    .catch(error => console.log(error))
+}
+
+function login(userEmail, userPassword) {
+    auth.signInWithEmailAndPassword(userEmail, userPassword)
+    .then( () => console.log(auth.currentUser) )
+    .catch( error => console.log(error) )
+}
+
+function logout() {
+    auth.signOut()
+    .then( () => console.log("usuário foi deslogado"))
+    .catch( error => console.log(error))
+}
+
+function scan() {
+
+    auth.onAuthStateChanged(user => {
+        if(user){
+          console.log(user)
+        } else {
+          console.log("Ninguem logado")
+        }
+    })
+}
