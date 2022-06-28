@@ -1,7 +1,12 @@
-async function getAlunos(colle) {
+async function getAlunos(colle, id=false) {
     const alunosCol = await db.collection(colle).get()
     const alunosList = alunosCol.docs.map(doc => doc.data());
-    return alunosList
+    if (id) {
+        const alunosList = alunosCol.docs.map(doc => [doc.data(), doc.id]);
+        return alunosList
+    } else {
+        return alunosList
+    }
 }
 async function getAluno(colle, id) {
 const doc = await db.collection(colle).doc(id).get()
@@ -36,6 +41,7 @@ const updateAluno = (colle, id, aluno) => db.collection(colle).doc(id).update(al
 const arrayAdd = firebase.firestore.FieldValue.arrayUnion
 const arrayDel = firebase.firestore.FieldValue.arrayRemove
 const sum = firebase.firestore.FieldValue.increment
+const del = firebase.firestore.FieldValue.delete
 
 function newUser(newUserEmail, newUserPassword) {
     auth.createUserWithEmailAndPassword(newUserEmail, newUserPassword)
@@ -44,9 +50,12 @@ function newUser(newUserEmail, newUserPassword) {
 }
 
 function login(userEmail, userPassword) {
-    auth.signInWithEmailAndPassword(userEmail, userPassword)
-    .then( () => console.log(auth.currentUser) )
-    .catch( error => console.log(error) )
+    auth.setPersistence(firebase.auth.Auth.Persistence.SESSION)
+    .then( () => {
+        auth.signInWithEmailAndPassword(userEmail, userPassword)
+        .then( () => console.log(auth.currentUser) )
+        .catch( error => console.log(error) )
+    }).catch( error => console.log(error) )
 }
 
 function logout() {
@@ -59,7 +68,7 @@ function scan() {
 
     auth.onAuthStateChanged(user => {
         if(user){
-          console.log(user)
+          console.log("usuário logado")
         } else {
           console.log("Ninguem logado")
         }
