@@ -20,11 +20,7 @@ const admim = {
 
 let user = auth.currentUser
 
-function newUserAdd(newUserEmail, newUserPassword) {
-  auth.createUserWithEmailAndPassword(newUserEmail, newUserPassword)
-  .then(user => console.log(`user add com sucesso => ${user}`))
-  .catch(error => console.log(error))
-}
+
 
 scan()
 

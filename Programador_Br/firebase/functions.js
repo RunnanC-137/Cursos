@@ -65,12 +65,6 @@ function logout() {
 }
 
 function scan() {
-
-    auth.onAuthStateChanged(user => {
-        if(user){
-          console.log("usuário logado")
-        } else {
-          console.log("Ninguem logado")
-        }
-    })
+    auth.onAuthStateChanged(user => user == true ? 
+        console.log("usuário logado") : console.log("usuário deslogado"))
 }
